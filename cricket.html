@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" a href="cricket.css">
+  <script src="cricket.js"></script>
+  <title>Cricket Game</title>
+</head>
+<body>
+      
+      <h1 id="Bat">Defeats</h1>
+      <img src="bat.png" alt="bat" class="icon1">
+      <img src="bat.png" alt="bat" class="icon4">
+
+      <h1 id="Ball">Defeats</h1>
+      <img src="ball.png" alt="ball" class="icon2">
+      <img src="ball.png" alt="bat" class="icon5">
+
+      <h1 id="Stump">Defeats</h1>
+      <img src="stump.png" alt="stump" class="icon3">
+      <img src="stump.png" alt="bat" class="icon6">
+   </div>
+  <div id="Game">
+   <h1>Bat Ball Stump Game</h1>
+  <button class="button1" onclick="
+   generateComputerchoice();
+
+    let resultMsg;  
+   if(Computerchoice ==='Ball'){
+      resultMsg='You Won.';
+   }else if(Computerchoice ==='Bat'){
+      resultMsg=`It's a Tie.`;
+   }else{
+      resultMsg='Computer Won.';
+   };
+    alert(`You have chosen Bat. Computerchoice is ${Computerchoice} and ${resultMsg}`);
+
+  ">Bat</button>
+  
+  <button class="button2" onclick="
+   generateComputerchoice();
+ 
+   if(Computerchoice ==='Ball'){
+      resultMsg=`It's a Tie.`;
+   }else if(Computerchoice ==='Bat'){
+      resultMsg='Computer Won';
+   }else{
+      resultMsg='You Won.';
+   };
+   alert(`You have chosen Ball. Computerchoice is ${Computerchoice} and ${resultMsg}`);
+ 
+   ">Ball</button>
+
+  <button class="button3" onclick="
+   generateComputerchoice();
+  
+   if(Computerchoice ==='Ball'){
+      resultMsg='Computer Won.';
+   }else if(Computerchoice ==='Bat'){
+      resultMsg='You Won.';
+   }else{
+      resultMsg=`It's a Tie.`;
+   };
+   alert(`You have chosen Stump. Computerchoice is ${Computerchoice} and ${resultMsg}`);
+  
+  ">Stump</button>
+</div>
+</body>
+</html>
